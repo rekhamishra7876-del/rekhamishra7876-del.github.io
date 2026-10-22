@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#101318">
+	<title>Neon Calculator</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<main class="calculator" aria-labelledby="page-title">
+		<p class="eyebrow">QUICK MATH</p>
+		<h1 id="page-title">Calculator<span>.</span></h1>
+
+		<div class="number-fields">
+			<label>
+				<span>First number</span>
+				<input id="first-number" type="number" step="any" inputmode="decimal" placeholder="0">
+			</label>
+			<label>
+				<span>Second number</span>
+				<input id="second-number" type="number" step="any" inputmode="decimal" placeholder="0">
+			</label>
+		</div>
+
+		<div class="operations" aria-label="Calculator operations">
+			<button type="button" data-operation="add" aria-label="Add">+</button>
+			<button type="button" data-operation="subtract" aria-label="Subtract">−</button>
+			<button type="button" data-operation="multiply" aria-label="Multiply">×</button>
+		</div>
+
+		<section class="result-panel" aria-live="polite" aria-atomic="true">
+			<span class="result-label">RESULT</span>
+			<output id="result">Ready</output>
+		</section>
+
+		<p class="message" id="message" role="status"></p>
+	</main>
+</body>
+</html>
